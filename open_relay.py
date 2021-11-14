@@ -16,11 +16,11 @@ GPIO.setup(CHANNEL, GPIO.OUT)
 
 def close_relay(pin):
     print("Relay closed")    
-    GPIO.output(pin, GPIO.HIGH)  # Woda nie leci
+    GPIO.output(pin, GPIO.HIGH)  
 
 def open_relay(pin):
     print("Relay open")
-    GPIO.output(pin, GPIO.LOW)  # Woda leci
+    GPIO.output(pin, GPIO.LOW)  
 
 def parser():
     parser = argparse.ArgumentParser(description='Open relay for defined time in open_time argument.')
